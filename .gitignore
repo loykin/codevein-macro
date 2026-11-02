@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+
+# 파밍 기록·확인용 캡처 (실행할 때마다 쌓인다)
+routes/debug/
+routes/farm_log.txt*
+routes/viewer.log

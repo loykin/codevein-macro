@@ -1,0 +1,23 @@
+[project]
+name = "codevein-macro"
+version = "0.1.0"
+description = "Code Vein 경애의 표식 파밍 매크로 (PS5 Remote Play + Mac)"
+readme = "README.md"
+# av 12.0.0이 arm64 Mac + Python 3.9 휠을 주는 마지막 조합이라 3.9로 고정
+requires-python = "==3.9.*"
+dependencies = [
+    "ps5rmtctl",
+    "av==12.0.0",
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "pygame",
+    "pyobjc-framework-Quartz",
+    "pyobjc-framework-Vision",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+ps5rmtctl = { git = "https://github.com/souriscloud/ps5rmtctl", rev = "cb3cfe0a6c051b8a7abd667165ec50c9f343cd66" }
